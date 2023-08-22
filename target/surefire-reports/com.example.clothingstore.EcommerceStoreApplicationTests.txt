@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.clothingstore.EcommerceStoreApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.689 s <<< FAILURE! - in com.example.clothingstore.EcommerceStoreApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.awt.HeadlessException
+
