@@ -95,8 +95,8 @@ public class PaypalController {
         try {
             System.out.println("Hiiiiiiii");
             Payment payment = service.createPayment(finalSum, "USD", "PAYPAL",
-                    "SALE", "You have to pay", "https://spring-boot-shop-84473a91f755.herokuapp.com/" + CANCEL_URL,
-                    "https://spring-boot-shop-84473a91f755.herokuapp.com/" + SUCCESS_URL);
+                    "SALE", "You have to pay", "https://shop-render-clothes.onrender.com/" + CANCEL_URL,
+                    "https://shop-render-clothes.onrender.com/" + SUCCESS_URL);
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
                     return "redirect:"+link.getHref();
